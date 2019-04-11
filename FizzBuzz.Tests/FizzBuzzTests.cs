@@ -10,7 +10,7 @@ namespace FizzBuzz.Tests
         public void shouldPrintNumberWhenNumberIsEntered() 
         {
             FizzBuzzService _fizzBuzz = new FizzBuzzService();
-            Assert.AreEqual("1", _fizzBuzz.Print(1));
+            Assert.AreEqual("2", _fizzBuzz.Print(2));
         }
     }
 }
