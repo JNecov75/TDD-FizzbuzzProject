@@ -7,6 +7,7 @@ namespace FizzBuzz.Tests
     public class FizzBuzzTests
     {
         FizzBuzzService _fizzBuzz;
+
         [TestInitialize]
         public void Init() 
         {
@@ -31,6 +32,13 @@ namespace FizzBuzz.Tests
         {
             Assert.AreEqual("buzz", _fizzBuzz.Print(5));
             Assert.AreEqual("buzz", _fizzBuzz.Print(10));
+        }
+
+        [TestMethod]
+        public void shouldPrintFizzBuzzWhenProductOfThreeAndFive() 
+        {
+            Assert.AreEqual("fizzbuzz", _fizzBuzz.Print(15));
+            Assert.AreEqual("fizzbuzz", _fizzBuzz.Print(30));
         }
     }
 }
