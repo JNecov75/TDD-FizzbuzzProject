@@ -20,10 +20,17 @@ namespace FizzBuzz.Tests
         }
 
         [TestMethod]
-        public void shouldPrintFizz() 
+        public void shouldPrintFizzWhenMultipleOfThree() 
         {
             Assert.AreEqual("fizz", _fizzBuzz.Print(3));
             Assert.AreEqual("fizz", _fizzBuzz.Print(6));
+        }
+
+        [TestMethod]
+        public void shouldPrintBuzzWhenMultipleOfFive() 
+        {
+            Assert.AreEqual("buzz", _fizzBuzz.Print(5));
+            Assert.AreEqual("buzz", _fizzBuzz.Print(10));
         }
     }
 }
