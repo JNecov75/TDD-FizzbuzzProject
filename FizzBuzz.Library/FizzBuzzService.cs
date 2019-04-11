@@ -8,6 +8,10 @@ namespace FizzBuzz.Library
             {
                 return "fizz";
             }
+            else if(value % 5 == 0)
+            {
+                return "buzz";
+            }
             return value.ToString();
         }
     }
