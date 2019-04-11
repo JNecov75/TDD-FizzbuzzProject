@@ -18,6 +18,7 @@ namespace FizzBuzz.Tests
         {
             FizzBuzzService _fizzBuzz = new FizzBuzzService();
             Assert.AreEqual("fizz", _fizzBuzz.Print(3));
+            Assert.AreEqual("fizz", _fizzBuzz.Print(6));
         }
     }
 }
