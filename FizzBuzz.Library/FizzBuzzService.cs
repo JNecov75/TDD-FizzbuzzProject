@@ -4,7 +4,7 @@ namespace FizzBuzz.Library
     {
         public string Print(int value)
         {
-            if (value % 3 == 0 && value % 5 == 0)
+            if ((value % 3 == 0) && (value % 5 == 0))
             {
                 return "fizzbuzz";
             }
