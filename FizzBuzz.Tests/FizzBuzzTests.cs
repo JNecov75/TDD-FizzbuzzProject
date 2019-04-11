@@ -7,7 +7,7 @@ namespace FizzBuzz.Tests
     public class FizzBuzzTests
     {
         [TestMethod]
-        public void whenANumberIsEnteredItShouldBePrinted() 
+        public void shouldPrintNumberWhenNumberIsEntered() 
         {
             FizzBuzzService _fizzBuzz = new FizzBuzzService();
             Assert.AreEqual("1", _fizzBuzz.Print(1));
